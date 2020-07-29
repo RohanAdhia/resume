@@ -40,3 +40,7 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+function js_Load() {
+  document.body.style.visibility='visible';
+}
