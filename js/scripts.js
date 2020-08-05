@@ -44,3 +44,13 @@
 function js_Load() {
   document.body.style.visibility='visible';
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+    placement : "top",
+    animation : true,
+    title : "Nothing Here!",
+    // delay : {show: 0 , hide : 800}
+  });
+});
+
