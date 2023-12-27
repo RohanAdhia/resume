@@ -46,6 +46,26 @@
   box-sizing: border-box;
 }
 
+/*******************************Custom Class Declaration Starts Here ****************************/
+.cii {
+  height: 3.75rem;
+  width: 2.5rem;
+}
+
+.present{
+  border-width: thin;
+  border-color: #000;
+  border-style: solid;
+  padding: 2% 2%;
+}
+
+.skill_cert{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*******************************Custom Class Declaration Ends Here *****************************/
+
 .brand-logo {
   width: 5%;
   height: auto;
@@ -90,12 +110,14 @@ hr {
 }
 
 h2{
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  margin-top: 1rem;
 }
 
 h1,h3, h4, h5, h6{
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.3rem;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -129,7 +151,8 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  margin-bottom: 0.5rem;
 }
 
 ol ol,
@@ -472,6 +495,7 @@ mark,
 .list-inline-item {
   display: inline-block;
 }
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -10145,7 +10169,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
+  padding-top: 1rem;
   padding-bottom: 5rem;
   max-width: 75rem;
 }
@@ -10162,7 +10187,8 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+    padding-top: 0.5rem;
     padding-bottom: 5rem;
   }
 }
