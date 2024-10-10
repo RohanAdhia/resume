@@ -47,18 +47,21 @@
                     'event_label': linkText,
                     'transport_type': 'beacon',
                     'event_callback': function() {
-                        // Open link in a new tab
-                        window.open(linkHref, '_blank');
-                    }
+                        // Open link in a new tab if target="_blank", else open in the same tab
+                        if (this.target === "_blank") {
+                            window.open(linkHref, '_blank');
+                        } else {
+                            document.location = linkHref; // Navigate to the link
+                        }
+                    }.bind(this) // Bind 'this' to access the link element
                 });
 
-                // Prevent default action so we don't navigate away immediately
+                // Prevent default action until the event is tracked
                 event.preventDefault();
             });
         });
     });
 </script>
-
 
 <body id="page-top" style="visibility: hidden;" onload="js_Load()">
   <!-- Navigation-->
