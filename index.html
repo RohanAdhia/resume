@@ -32,29 +32,33 @@
 </script>
 
 <!-- Event Tracking Code -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a');
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a');
 
-            links.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    const linkText = this.textContent; 
-                    const linkHref = this.href; 
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                const linkText = this.textContent; 
+                const linkHref = this.href; 
 
-                    gtag('event', 'click', {
-                        'event_category': 'Link',
-                        'event_label': linkText,
-                        'transport_type': 'beacon',
-                        'event_callback': function() {
-                            document.location = linkHref; 
-                        }
-                    });
-
-                    event.preventDefault();
+                // Send event to Google Analytics
+                gtag('event', 'click', {
+                    'event_category': 'Link',
+                    'event_label': linkText,
+                    'transport_type': 'beacon',
+                    'event_callback': function() {
+                        // Open link in a new tab
+                        window.open(linkHref, '_blank');
+                    }
                 });
+
+                // Prevent default action so we don't navigate away immediately
+                event.preventDefault();
             });
         });
-    </script>
+    });
+</script>
+
 
 <body id="page-top" style="visibility: hidden;" onload="js_Load()">
   <!-- Navigation-->
