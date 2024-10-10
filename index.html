@@ -31,6 +31,31 @@
   gtag('config', 'G-W3C35X8L8H');
 </script>
 
+<!-- Event Tracking Code -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    const linkText = this.textContent; 
+                    const linkHref = this.href; 
+
+                    gtag('event', 'click', {
+                        'event_category': 'Link',
+                        'event_label': linkText,
+                        'transport_type': 'beacon',
+                        'event_callback': function() {
+                            document.location = linkHref; 
+                        }
+                    });
+
+                    event.preventDefault();
+                });
+            });
+        });
+    </script>
+
 <body id="page-top" style="visibility: hidden;" onload="js_Load()">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
