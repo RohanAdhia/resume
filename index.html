@@ -21,46 +21,47 @@
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3C35X8L8H"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-W3C35X8L8H');
-</script>
+  gtag('config', 'G-W3C35X8L8H', {
+    'debug_mode' : true
+  });
 
-<!-- Event Tracking Code -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('a');
+// Event Tracking Code
+  document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('a');
 
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                const linkText = this.textContent; 
-                const linkHref = this.href; 
+      links.forEach(link => {
+          link.addEventListener('click', function(event) {
+              const linkText = this.textContent; 
+              const linkHref = this.href; 
+              const linkLabel = this.getAttribute('data-event-label') || linkText;
 
-                // Send event to Google Analytics
-                gtag('event', 'click', {
-                    'event_category': 'Link',
-                    'event_label': linkText,
-                    'transport_type': 'beacon',
-                    'event_callback': function() {
-                        // Open link in a new tab if target="_blank", else open in the same tab
-                        if (this.target === "_blank") {
-                            window.open(linkHref, '_blank');
-                        } else {
-                            document.location = linkHref; // Navigate to the link
-                        }
-                    }.bind(this) // Bind 'this' to access the link element
-                });
+              // Send event to Google Analytics
+              gtag('event', 'click', {
+                  'event_category': 'Link',
+                  'event_label': linkLabel,
+                  'transport_type': 'beacon',
+                  'event_callback': function() {
+                      // Open link in a new tab if target="_blank", else open in the same tab
+                      if (this.target === "_blank") {
+                          window.open(linkHref, '_blank');
+                      } else {
+                          document.location = linkHref; // Navigate to the link
+                      }
+                  }.bind(this) // Bind 'this' to access the link element
+              });
 
-                // Prevent default action until the event is tracked
-                event.preventDefault();
-            });
-        });
-    });
+              // Prevent default action until the event is tracked
+              event.preventDefault();
+          });
+      });
+  });
 </script>
 
 <body id="page-top" style="visibility: hidden;" onload="js_Load()">
