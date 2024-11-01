@@ -71,6 +71,17 @@
 
 /*******************************Custom Class Declaration Ends Here *****************************/
 
+@font-face {
+  font-family: 'Rohan_Adhia'; /*a name to be used later*/
+  src: url("../assets/fonts/RA-Font-Regular.ttf"); /*URL to font*/
+}
+
+.signature {
+  color: #000;
+  font-family: "Rohan_Adhia";
+  font-size: 3em;
+}
+
 .brand-logo {
   width: 5%;
   height: auto;
