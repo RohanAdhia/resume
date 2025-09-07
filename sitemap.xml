@@ -11,20 +11,4 @@
     <priority>0.8</priority>
     <changefreq>yearly</changefreq>
   </url>
-
-  <!-- Projects (as found in your index.html) -->
-  <url><loc>https://rohanadhia.github.io/dicegame/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/rps/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/simon/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/drum/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/tindog/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/GST-Calc/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/GST-Calc/margin.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/counter/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/randomNumberGenerator/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/todolist/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/text-length/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/kt/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://rohanadhia.github.io/kh/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-
 </urlset>
