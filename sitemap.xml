@@ -5,10 +5,4 @@
     <priority>1.00</priority>
     <changefreq>weekly</changefreq>
   </url>
-
-  <url>
-    <loc>https://rohanadhia.com/Rohan-Adhia-Resume.pdf</loc>
-    <priority>0.8</priority>
-    <changefreq>yearly</changefreq>
-  </url>
 </urlset>
