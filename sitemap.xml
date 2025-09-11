@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main site -->
   <url>
     <loc>https://rohanadhia.com/</loc>
     <priority>1.00</priority>
     <changefreq>weekly</changefreq>
   </url>
-    <url>
+
+  <url>
     <loc>https://rohanadhia.com/Rohan-Adhia-Resume.pdf</loc>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
     <changefreq>yearly</changefreq>
   </url>
+
+  <!-- Projects on subdomains -->
+  <url><loc>https://dicegame.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://rps.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simon.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://drum.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://tindog.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gst-calc.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gst-calc.rohanadhia.com/margin.html</loc><priority>0.60</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://counter.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://randomNumberGenerator.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://todolist.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://text-length.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kt.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kh.rohanadhia.com/</loc><priority>0.70</priority><changefreq>monthly</changefreq></url>
 </urlset>
