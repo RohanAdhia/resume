@@ -100,7 +100,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .img-fluid-custom {
   max-width: 23%;
   height: auto;
-  border: solid #426f69 5px;
+  /* border: solid #426f69 5px; */
+  border: solid #BD5D38 2.5px;
 }
 
 body {
